@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{277EB4ED-B7CC-47CE-BC85-FAD6F7741CEA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proyecto_Final</RootNamespace>
+    <AssemblyName>Proyecto Final</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.2.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 8.2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuscCatego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscCatego.Designer.cs">
+      <DependentUpon>BuscCatego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscProduct.Designer.cs">
+      <DependentUpon>BuscProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscSucur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscSucur.Designer.cs">
+      <DependentUpon>BuscSucur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscVende.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscVende.Designer.cs">
+      <DependentUpon>BuscVende.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearCatego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearCatego.Designer.cs">
+      <DependentUpon>CrearCatego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearProduct.Designer.cs">
+      <DependentUpon>CrearProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearSucur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearSucur.Designer.cs">
+      <DependentUpon>CrearSucur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearVende.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearVende.Designer.cs">
+      <DependentUpon>CrearVende.cs</DependentUpon>
+    </Compile>
+    <Compile Include="datostablas.cs" />
+    <Compile Include="EditCatego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCatego.Designer.cs">
+      <DependentUpon>EditCatego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProduct.Designer.cs">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSucur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSucur.Designer.cs">
+      <DependentUpon>EditSucur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditVende.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditVende.Designer.cs">
+      <DependentUpon>EditVende.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElimCatego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElimCatego.Designer.cs">
+      <DependentUpon>ElimCatego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElimProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElimProduct.Designer.cs">
+      <DependentUpon>ElimProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElimSucur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElimSucur.Designer.cs">
+      <DependentUpon>ElimSucur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElimVende.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElimVende.Designer.cs">
+      <DependentUpon>ElimVende.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturar.Designer.cs">
+      <DependentUpon>Facturar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListCatego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListCatego.Designer.cs">
+      <DependentUpon>ListCatego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListProduct.Designer.cs">
+      <DependentUpon>ListProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListSucur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListSucur.Designer.cs">
+      <DependentUpon>ListSucur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListVende.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListVende.Designer.cs">
+      <DependentUpon>ListVende.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Verfacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verfacturas.Designer.cs">
+      <DependentUpon>Verfacturas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BuscCatego.resx">
+      <DependentUpon>BuscCatego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscProduct.resx">
+      <DependentUpon>BuscProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscSucur.resx">
+      <DependentUpon>BuscSucur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscVende.resx">
+      <DependentUpon>BuscVende.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearCatego.resx">
+      <DependentUpon>CrearCatego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearProduct.resx">
+      <DependentUpon>CrearProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearSucur.resx">
+      <DependentUpon>CrearSucur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearVende.resx">
+      <DependentUpon>CrearVende.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCatego.resx">
+      <DependentUpon>EditCatego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProduct.resx">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSucur.resx">
+      <DependentUpon>EditSucur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditVende.resx">
+      <DependentUpon>EditVende.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElimCatego.resx">
+      <DependentUpon>ElimCatego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElimProduct.resx">
+      <DependentUpon>ElimProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElimSucur.resx">
+      <DependentUpon>ElimSucur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElimVende.resx">
+      <DependentUpon>ElimVende.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturar.resx">
+      <DependentUpon>Facturar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListCatego.resx">
+      <DependentUpon>ListCatego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListProduct.resx">
+      <DependentUpon>ListProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListSucur.resx">
+      <DependentUpon>ListSucur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListVende.resx">
+      <DependentUpon>ListVende.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Verfacturas.resx">
+      <DependentUpon>Verfacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
